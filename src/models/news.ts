@@ -11,7 +11,7 @@ export interface INewsItem {
     userId: number;
 }
 
-export interface NewsState {
+export interface INewsState {
     newsList: INewsItem[];
     favorites: number[];
     loading: boolean;

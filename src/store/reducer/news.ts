@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
-import type { INewsItem, NewsState } from "../../models/news";
+import type { INewsItem, INewsState } from "../../models/news";
 
 export const fetchNews = createAsyncThunk(
     'news/fetchNews',
@@ -31,7 +31,7 @@ export const fetchNews = createAsyncThunk(
     }
 );
 
-const initialState: NewsState = {
+const initialState: INewsState = {
     newsList: [],
     favorites: [],
     loading: false,
