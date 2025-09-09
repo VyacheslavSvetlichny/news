@@ -18,7 +18,6 @@ export const NewsCard: React.FC<NewsCardProps> = ({ news, showActions = true }) 
 
     return (
         <Card
-            hoverable
             actions={showActions ? [
                 <FavoriteButton {...news} />,
                 <Button type="text" icon={<EyeOutlined />} onClick={handleReadMore}>
